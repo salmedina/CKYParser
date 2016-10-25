@@ -1,0 +1,22 @@
+maxTrainLength=15, maxTestLength=15
+
+h=2,v=2
+[Average]  P: 85.02 R: 83.54 F1: 84.27 EX: 45.36
+
+h=inf,v=1
+[Average]  P: 82.33 R: 76.59 F1: 79.36 EX: 32.77
+
+h=0,v=1
+[Average]  P: 76.86 R: 71.06 F1: 73.85 EX: 20.19
+
+
+maxTrainLength=inf, maxTestLength=40
+
+h=2,v=2
+[Average]  P: 81.34 R: 80.14 F1: 80.74 EX: 21.6
+
+h=inf,v=1
+[Average]  P: 75.33 R: 70.13 F1: 72.64 EX: 11.28
+
+h=0,v=1
+[Average]  P: 67.51 R: 63.0 F1: 65.18 EX: 5.76

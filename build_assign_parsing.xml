@@ -1,0 +1,24 @@
+<project name="assign_parsing" default="build" basedir=".">
+  <property name="name" location="assign_parsing"/>
+  <property environment="env"/>
+
+  <target name="build">
+    <delete dir="build_assign_parsing"/>
+    <mkdir dir="build_assign_parsing"/>
+    <copy todir="build_assign_parsing">
+    	<fileset dir=".">
+    		<include name="src/**"/>
+    	</fileset>
+    </copy>
+    <javac srcdir="build_assign_parsing/src" debug="true" classpath="${name}.jar">
+      <compilerarg value="-Xlint:deprecation"/>
+      <include name="**/*.java"/>
+    </javac>
+    <jar destfile="${name}-submit.jar" basedir="build_assign_parsing/src">
+	</jar>
+	<delete dir="build_assign_parsing"/>
+	
+  </target>
+</project>
+                                 
+                                 
